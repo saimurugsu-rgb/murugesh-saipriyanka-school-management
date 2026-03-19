@@ -1,0 +1,81 @@
+/* 1. Full Page Background */
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* 2. Glassmorphism Card Style */
+.glass-card {
+    background: rgba(255, 255, 255, 0.1); /* Translucent white */
+    backdrop-filter: blur(15px); /* Intha line thaan background-ai blur pannum */
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    width: 400px;
+    text-align: center;
+}
+
+/* 3. Input Fields Style */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+
+/* Placeholder color */
+::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 4. Button Style */
+.btn-glass {
+    background: #4facfe;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-glass:hover {
+    background: #00f2fe;
+    transform: translateY(-2px); /* Hover pannum pothu light-ah mela thookkum */
+}
+
+/* 5. Table Style (For Panels) */
+.glass-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.glass-table th, .glass-table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+}
+
+.glass-table th {
+    background: rgba(255, 255, 255, 0.2);
+}
